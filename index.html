@@ -74,6 +74,12 @@
       display: inline-block;
       border-radius: 5px;
       margin-top: 1rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .cta:hover {
+      background-color: #556b1a;
     }
 
     footer {
@@ -127,25 +133,21 @@
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+    <h2>Contacto para su Valoración Rústica</h2>
+    <p>¿Necesita una tasación profesional? Escríbanos y le responderemos en menos de 24 horas.</p>
     
-    <ul>
-      <li><strong>Teléfono:</strong> <a href="tel:+34630729846">+34 630 729 846</a></li>
-      <li><strong>Email:</strong> <a href="mailto:rober_fm@coial.org">rober_fm@coial.org</a></li>
-    </ul>
-
-    <!-- Datos estructurados para SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Rustival",
-      "telephone": "+34 630 729 846",
-      "email": "rober_fm@coial.org",
-      "url": "https://robertofmorant.github.io/rustival/"
-    }
-    </script>
+    <form action="https://formspree.io/f/xeozvzeo" method="POST">
+      <label for="name">Nombre:</label><br/>
+      <input type="text" id="name" name="name" required /><br/><br/>
+      
+      <label for="email">Correo electrónico:</label><br/>
+      <input type="email" id="email" name="_replyto" required /><br/><br/>
+      
+      <label for="message">Mensaje:</label><br/>
+      <textarea id="message" name="message" rows="4" required></textarea><br/><br/>
+      
+      <button type="submit" class="cta">Enviar</button>
+    </form>
   </section>
 
   <footer>
