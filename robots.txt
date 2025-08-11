@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://robertofmorant.github.io/rustival/sitemap.xml
+Sitemap: https://rustival.es/sitemap.xml
